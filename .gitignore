@@ -1,0 +1,9 @@
+elpa/
+auto-save-list/
+undo-tree/
+recentf
+amx-items
+eshell/
+*~
+\#*\#
+.DS_Store
