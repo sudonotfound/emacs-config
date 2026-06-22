@@ -6,20 +6,39 @@
 
 ## セットアップ
 
+### 1. 事前インストール
+
 ```bash
-git clone <this-repo> ~/.emacs.d
+# vterm のビルドに必要
+brew install cmake
+
+# TypeScript LSP サーバー
+npm install -g typescript typescript-language-server
+```
+
+### 2. リポジトリをクローン
+
+```bash
+git clone https://github.com/sudonotfound/emacs-config ~/.emacs.d
+```
+
+### 3. Emacs を起動
+
+```bash
 emacs
 ```
 
-初回起動時にパッケージが自動インストールされます。完了後、以下を一度実行してください。
+初回起動時にすべてのパッケージが自動インストールされます。
+
+### 4. 初回のみ実行
 
 ```
+# アイコンフォントのインストール（Emacs 内で実行）
 M-x nerd-icons-install-fonts
 ```
 
-また Org ファイルの保存先ディレクトリを作成してください。
-
 ```bash
+# org-mode のファイル保存先ディレクトリを作成
 mkdir -p ~/org
 ```
 
