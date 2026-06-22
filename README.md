@@ -18,7 +18,13 @@ npm install -g typescript typescript-language-server
 
 ### 2. リポジトリをクローン
 
+既存の `~/.emacs.d/` がある場合は事前にバックアップしてください。
+
 ```bash
+# 既存環境のバックアップ（任意）
+mv ~/.emacs.d ~/.emacs.d.bak
+
+# クローン
 git clone https://github.com/sudonotfound/emacs-config ~/.emacs.d
 ```
 
